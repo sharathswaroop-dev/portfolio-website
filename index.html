@@ -1,68 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sharath Swaroop | Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sharath Swaroop — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#home">Sharath</a>
+      <button class="nav-toggle" id="navToggle">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <header>
-        <h1 class="logo">Sharath Swaroop</h1>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+  <header id="home" class="hero">
+    <div class="hero-inner">
+      <h1>Sharath Swaroop</h1>
+      <p class="lead">Beginner Developer — C++, Python, Web</p>
+      <div class="cta">
+        <a href="#projects" class="btn">See Projects</a>
+        <a href="#contact" class="btn btn-ghost">Contact</a>
+      </div>
+    </div>
+  </header>
 
-    <section class="hero">
-        <h2>Hi, I'm Sharath 👋</h2>
-        <p>Aspiring Software Engineer | C++ | Web Developer | Problem Solver</p>
+  <main>
+    <section id="about" class="card">
+      <h2>About Me</h2>
+      <p>I'm Sharath — learning software development with a focus on C++, Python and frontend web. I build small, clean projects to learn best practices and improve my coding skills.</p>
     </section>
 
-    <section id="about" class="container">
-        <h2>About Me</h2>
-        <p>
-            I am a passionate developer learning C++, Web Development, and DSA.
-            I love building projects and improving my problem-solving skills.
-        </p>
+    <section id="skills" class="card">
+      <h2>Skills</h2>
+      <div class="grid">
+        <div class="skill">C++</div>
+        <div class="skill">Python</div>
+        <div class="skill">HTML & CSS</div>
+        <div class="skill">Git & GitHub</div>
+      </div>
     </section>
 
-    <section id="skills" class="container">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-            <div class="skill">C++</div>
-            <div class="skill">HTML</div>
-            <div class="skill">CSS</div>
-            <div class="skill">JavaScript</div>
-            <div class="skill">Git & GitHub</div>
-        </div>
+    <section id="projects" class="card">
+      <h2>Projects</h2>
+      <div class="project-list">
+        <article class="project">
+          <h3>Student Management System</h3>
+          <p>Console-based C++ app using file handling. (See repository)</p>
+          <a class="proj-link" href="https://github.com/sharathswaroop-dev/my-first-project" target="_blank" rel="noopener">View on GitHub</a>
+        </article>
+
+        <article class="project">
+          <h3>Portfolio Website</h3>
+          <p>This dark-themed portfolio (HTML/CSS) — hosted with GitHub Pages.</p>
+          <a class="proj-link" href="#" target="_blank" rel="noopener">Live demo (after deploy)</a>
+        </article>
+      </div>
+      <p class="note">Your uploaded C++ source is at: <code>/mnt/data/963d021e-4341-4420-a60f-26fa0da84460.cpp</code></p>
     </section>
 
-    <section id="projects" class="container">
-        <h2>Projects</h2>
-
-        <div class="project-card">
-            <h3>Student Management System</h3>
-            <p>C++ project managing student data using file handling.</p>
-            <a href="https://github.com/sharathswaroop-dev/my-first-project" target="_blank">View Project</a>
-        </div>
-
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+      <p>GitHub: <a href="https://github.com/sharathswaroop-dev" target="_blank">github.com/sharathswaroop-dev</a></p>
     </section>
+  </main>
 
-    <section id="contact" class="container">
-        <h2>Contact</h2>
-        <p>Email: sharathswaroop@example.com</p>
-        <p>GitHub: <a href="https://github.com/sharathswaroop-dev" target="_blank">github.com/sharathswaroop-dev</a></p>
-    </section>
+  <footer class="footer">
+    <p>© 2025 Sharath Swaroop. Built with HTML, CSS & JS.</p>
+  </footer>
 
-    <footer>
-        <p>© 2025 Sharath Swaroop | Portfolio</p>
-    </footer>
-
+  <script src="script.js"></script>
 </body>
 </html>
